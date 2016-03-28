@@ -32,7 +32,7 @@ public class FileUtils {
 	public static String read(String filename, String encoding) 
 	{
 		BufferedReader in;
-		String content = "";
+		StringBuffer content = new StringBuffer();
 		try{
 			in = new BufferedReader(
 	            new InputStreamReader(
@@ -41,15 +41,15 @@ public class FileUtils {
 			int numRead=-1;
 			while((numRead=in.read(newContent)) != -1)
 			{
-				content += new String(newContent, 0, numRead);
+				content.append(new String(newContent, 0, numRead));
 			}
 			in.close();
 		}
 		catch(Exception e)
 		{
-			content = "";
+			content = new StringBuffer();
 		}
-		return content;
+		return content.toString();
 	}
 	
 	public static List<String> readLine(String filename, String encoding) 
