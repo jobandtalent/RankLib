@@ -9,6 +9,12 @@
 
 package ciir.umass.edu.learning.tree;
 
+import java.io.BufferedReader;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import ciir.umass.edu.learning.DataPoint;
 import ciir.umass.edu.learning.RankList;
 import ciir.umass.edu.learning.Ranker;
@@ -17,12 +23,6 @@ import ciir.umass.edu.utilities.MergeSorter;
 import ciir.umass.edu.utilities.MyThreadPool;
 import ciir.umass.edu.utilities.RankLibError;
 import ciir.umass.edu.utilities.SimpleMath;
-
-import java.io.BufferedReader;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * @author vdang
@@ -306,7 +306,7 @@ public class LambdaMART extends Ranker {
 	{
 		try {
 			String content = "";
-			String model = "";
+			StringBuffer model = new StringBuffer();
 			BufferedReader in = new BufferedReader(new StringReader(fullText));
 			while((content = in.readLine()) != null)
 			{
@@ -316,11 +316,11 @@ public class LambdaMART extends Ranker {
 				if(content.indexOf("##")==0)
 					continue;
 				//actual model component
-				model += content;
+				model.append(content);
 			}
 			in.close();
 			//load the ensemble
-			ensemble = new Ensemble(model);
+			ensemble = new Ensemble(model.toString());
 			features = ensemble.getFeatures();
 		}
 		catch(Exception ex)
