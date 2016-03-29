@@ -1,0 +1,147 @@
+## LambdaMART
+## No. of trees = 1603
+## No. of leaves = 20
+## No. of threshold candidates = 256
+## Learning rate = 0.4
+## Stop early = 100
+
+<ensemble>
+        <tree id="1" weight="0.4">
+                <split>
+                        <feature> 7 </feature>
+                        <threshold> 0.125 </threshold>
+                        <split pos="left">
+                                <feature> 2 </feature>
+                                <threshold> 0.265625 </threshold>
+                                <split pos="left">
+                                        <feature> 6 </feature>
+                                        <threshold> 0.1015625 </threshold>
+                                        <split pos="left">
+                                                <feature> 8 </feature>
+                                                <threshold> 0.2 </threshold>
+                                                <split pos="left">
+                                                        <feature> 7 </feature>
+                                                        <threshold> 0.01953125 </threshold>
+                                                        <split pos="left">
+                                                                <feature> 7 </feature>
+                                                                <threshold> 0.015625 </threshold>
+                                                                <split pos="left">
+                                                                        <feature> 6 </feature>
+                                                                        <threshold> 0.03515625 </threshold>
+                                                                        <split pos="left">
+                                                                                <output> -1.0496468544006348 </output>
+                                                                        </split>
+                                                                        <split pos="right">
+                                                                                <output> 0.5426508784294128 </output>
+                                                                        </split>
+                                                                </split>
+                                                                <split pos="right">
+                                                                        <output> -0.9940731525421143 </output>
+                                                                </split>
+                                                        </split>
+                                                        <split pos="right">
+                                                                <output> 0.1814108043909073 </output>
+                                                        </split>
+                                                </split>
+                                                <split pos="right">
+                                                        <output> -0.07350680977106094 </output>
+                                                </split>
+                                        </split>
+                                        <split pos="right">
+                                                <output> 0.6242965459823608 </output>
+                                        </split>
+                                </split>
+                                <split pos="right">
+                                        <output> 0.9236675500869751 </output>
+                                </split>
+                        </split>
+                        <split pos="right">
+                                                        <feature> 7 </feature>
+                                                        <threshold> 0.99609375 </threshold>
+                                                        <split pos="left">
+                                                                <feature> 6 </feature>
+                                                                <threshold> 0.98828125 </threshold>
+                                                                <split pos="left">
+                                                                        <feature> 7 </feature>
+                                                                        <threshold> 0.1484375 </threshold>
+                                                                        <split pos="left">
+                                                                                <output> 1.339347243309021 </output>
+                                                                        </split>
+                                                                        <split pos="right">
+                                                                                <output> 0.8404303789138794 </output>
+                                                                        </split>
+                                                                </split>
+                                                                <split pos="right">
+                                                                        <output> 1.7165075540542603 </output>
+                                                                </split>
+                                                        </split>
+                                                        <split pos="right">
+                                                                <feature> 8 </feature>
+                                                                <threshold> 0.4 </threshold>
+                                                                <split pos="left">
+                                                                        <feature> 6 </feature>
+                                                                        <threshold> 0.07421875 </threshold>
+                                                                        <split pos="left">
+                                                                                <feature> 2 </feature>
+                                                                                <threshold> 0.0 </threshold>
+                                                                                <split pos="left">
+                                                                                        <feature> 8 </feature>
+                                                                                        <threshold> 0.25 </threshold>
+                                                                                        <split pos="left">
+                                                                                                <feature> 8 </feature>
+                                                                                                <threshold> 0.0 </threshold>
+                                                                                                <split pos="left">
+                                                                                                        <feature> 9 </feature>
+                                                                                                        <threshold> 0.0 </threshold>
+                                                                                                        <split pos="left">
+                                                                                                                <feature> 5 </feature>
+                                                                                                                <threshold> 0.5859375 </threshold>
+                                                                                                                <split pos="left">
+                                                                                                                        <feature> 5 </feature>
+                                                                                                                        <threshold> 0.0 </threshold>
+                                                                                                                        <split pos="left">
+                                                                                                                                <feature> 6 </feature>
+                                                                                                                                <threshold> 0.0 </threshold>
+                                                                                                                                <split pos="left">
+                                                                                                                                        <output> 1.7393101453781128 </output>
+                                                                                                                                                                                                                            </split>
+                                                                                                                                                                                                                                                <split pos="right">
+                                                                                                                                                                                                                                                        <output> 2.0 </output>
+                                                                                                                                                                                                                                                </split>
+                                                                                                                                                                                                                                        </split>
+                                                                                                                                                                                                                                        <split pos="right">
+                                                                                                                                                                                                                                                <output> 2.0 </output>
+                                                                                                                                                                                                                                        </split>
+                                                                                                                                                                                                                                </split>
+                                                                                                                                                                                                                                <split pos="right">
+                                                                                                                                                                                                                                        <output> 2.0 </output>
+                                                                                                                                                                                                                                </split>
+                                                                                                                                                                                                                        </split>
+                                                                                                                                                                                                                        <split pos="right">
+                                                                                                                                                                                                                                <output> 1.3973280191421509 </output>
+                                                                                                                                                                                                                        </split>
+                                                                                                                                                                                                                </split>
+                                                                                                                                                                                                                <split pos="right">
+                                                                                                                                                                                                                        <output> 0.0 </output>
+                                                                                                                                                                                                                </split>
+                                                                                                                                                                                                        </split>
+                                                                                                                                                                                                        <split pos="right">
+                                                                                                                                                                                                                <output> 1.9779181480407715 </output>
+                                                                                                                                                                                                        </split>
+                                                                                                                                                                                                </split>
+                                                                                                                                                                                                <split pos="right">
+                                                                                                                                                                                                        <output> -2.0 </output>
+                                                                                                                                                                                                </split>
+                                                                                                                                                                                        </split>
+                                                                                                                                                                                        <split pos="right">
+                                                                                                                                                                                                <output> 1.6689074039459229 </output>
+                                                                                                                                                                                        </split>
+                                                                                                                                                                                </split>
+                                                                                                                                                                                <split pos="right">
+                                                                                                                                                                                        <output> 1.0762118101119995 </output>
+                                                                                                                                                                                </split>
+                                                                                                                                                                        </split>
+                                                                                                                                                                </split>
+                                                                                                                                                        </split>
+                                                                                                                                                </tree>
+                                                                                                                                     </ensemble>
